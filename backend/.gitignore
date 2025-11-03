@@ -1,0 +1,119 @@
+# ==========================================
+# Backend .gitignore
+# ==========================================
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.yarn/
+.pnpm-store/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+combined.log
+error.log
+
+# Environment variables (⚠️ SENSITIVE - Contains DB credentials!)
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+server/.env
+*.env
+!.env.example
+
+# IDE/Editor
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+*.pem
+desktop.ini
+
+# Build outputs
+dist/
+build/
+
+# Uploads directory (⚠️ User-generated content)
+uploads/
+server/uploads/
+public/uploads/
+static/uploads/
+
+# Database files (if using local DB)
+*.db
+*.sqlite
+*.sqlite3
+data/
+mongo-data/
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Cache
+.eslintcache
+*.cache
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+.tmp/
+
+# Package manager
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+
+# Session files
+sessions/
+*.session
+
+# Process managers
+.pm2/
+pm2.log
+ecosystem.config.js
+
+# Security files
+*.key
+*.cert
+*.crt
+*.csr
+*.pem
+*.p12
+*.pfx
+
+# Deployment
+.vercel
+.netlify
+.serverless/
+
+# Docker
+.docker/
+docker-compose.override.yml
